@@ -1,0 +1,1012 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="K1U-kh-9dD">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Mantram_of_the_Will" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="EG1-MJ-a0w">
+                                <rect key="frame" x="0.0" y="88" width="428" height="804"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Nzd-Jj-0uY" appends="YES" id="moX-7v-Vpd"/>
+                                    <outletCollection property="gestureRecognizers" destination="Nzd-Jj-0uY" appends="YES" id="Eo9-eP-s3C"/>
+                                </connections>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Human Will" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lRs-pe-Wjc">
+                                <rect key="frame" x="154" y="862" width="120" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="EG1-MJ-a0w" secondAttribute="bottom" id="8V1-GP-9Lm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="lRs-pe-Wjc" secondAttribute="bottom" constant="10" id="LBg-s9-Rn5"/>
+                            <constraint firstItem="EG1-MJ-a0w" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hT3-MB-3BC"/>
+                            <constraint firstItem="EG1-MJ-a0w" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="snc-5t-fz3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EG1-MJ-a0w" secondAttribute="trailing" id="uPY-jL-0V4"/>
+                            <constraint firstItem="lRs-pe-Wjc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yme-z6-LHP"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="aSJ-R2-rai"/>
+                    <connections>
+                        <segue destination="tNr-8X-gdW" kind="show" identifier="2" id="v5a-Pv-OEL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="Nzd-Jj-0uY">
+                    <connections>
+                        <action selector="swipe1:" destination="BYZ-38-t0r" id="wDM-V3-fOP"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="660.86956521739137" y="310.71428571428572"/>
+        </scene>
+        <!--Opening View Controller-->
+        <scene sceneID="9Oq-A7-wPf">
+            <objects>
+                <viewController id="V6Y-QV-Qwa" customClass="openingViewController" customModule="Mantram_of_the_Will" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1ou-aD-TSC">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="light" translatesAutoresizingMaskIntoConstraints="NO" id="zhv-VO-amb">
+                                <rect key="frame" x="0.0" y="88" width="428" height="804"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="szI-a2-4mQ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zhv-VO-amb" firstAttribute="leading" secondItem="szI-a2-4mQ" secondAttribute="leading" id="IcU-JH-mXV"/>
+                            <constraint firstItem="szI-a2-4mQ" firstAttribute="bottom" secondItem="zhv-VO-amb" secondAttribute="bottom" id="Pv8-pk-VaE"/>
+                            <constraint firstItem="szI-a2-4mQ" firstAttribute="trailing" secondItem="zhv-VO-amb" secondAttribute="trailing" id="SlL-vO-hyM"/>
+                            <constraint firstItem="zhv-VO-amb" firstAttribute="top" secondItem="szI-a2-4mQ" secondAttribute="top" id="ZN8-DC-0iC"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="2Gh-iW-VtH"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="1" id="ByG-ZS-RTM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K4t-rd-5gf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-97.101449275362327" y="310.71428571428572"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="YXM-Ba-q4M">
+            <objects>
+                <viewController id="tNr-8X-gdW" customClass="secondViewController" customModule="Mantram_of_the_Will" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eY5-bG-QW3">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2" translatesAutoresizingMaskIntoConstraints="NO" id="89M-An-tnW">
+                                <rect key="frame" x="0.0" y="88" width="428" height="804"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enlightened By Science" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rJ0-fE-rSC">
+                                <rect key="frame" x="124.66666666666669" y="862" width="179" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ylk-7U-pnK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ylk-7U-pnK" firstAttribute="trailing" secondItem="89M-An-tnW" secondAttribute="trailing" id="4Pg-fS-Weg"/>
+                            <constraint firstItem="89M-An-tnW" firstAttribute="top" secondItem="ylk-7U-pnK" secondAttribute="top" id="Fz6-vu-mJQ"/>
+                            <constraint firstItem="ylk-7U-pnK" firstAttribute="bottom" secondItem="rJ0-fE-rSC" secondAttribute="bottom" constant="10" id="LZd-3e-Z6Y"/>
+                            <constraint firstItem="ylk-7U-pnK" firstAttribute="bottom" secondItem="89M-An-tnW" secondAttribute="bottom" id="N4Q-xZ-4Su"/>
+                            <constraint firstItem="rJ0-fE-rSC" firstAttribute="centerX" secondItem="eY5-bG-QW3" secondAttribute="centerX" id="da7-zB-LQm"/>
+                            <constraint firstItem="89M-An-tnW" firstAttribute="leading" secondItem="ylk-7U-pnK" secondAttribute="leading" id="tMy-5g-3vT"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="42x-2G-6xa"/>
+                    <connections>
+                        <segue destination="xFK-Xh-wDe" kind="show" identifier="3" id="30j-vn-iWU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kX6-55-TQX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1339.1304347826087" y="302.67857142857139"/>
+        </scene>
+        <!--Third View Controller-->
+        <scene sceneID="p5F-Ro-GBf">
+            <objects>
+                <viewController id="xFK-Xh-wDe" customClass="thirdViewController" customModule="Mantram_of_the_Will" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dlB-HB-1lf">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3" translatesAutoresizingMaskIntoConstraints="NO" id="3u6-Vp-jM8">
+                                <rect key="frame" x="0.0" y="88" width="428" height="804"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="and Manifesed By Action" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DJ2-3M-Qf4">
+                                <rect key="frame" x="119.66666666666669" y="861" width="189" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bhY-2x-0hS"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bhY-2x-0hS" firstAttribute="trailing" secondItem="3u6-Vp-jM8" secondAttribute="trailing" id="P7l-Yp-vVT"/>
+                            <constraint firstItem="DJ2-3M-Qf4" firstAttribute="centerX" secondItem="dlB-HB-1lf" secondAttribute="centerX" id="ag4-Jx-7TI"/>
+                            <constraint firstItem="bhY-2x-0hS" firstAttribute="bottom" secondItem="3u6-Vp-jM8" secondAttribute="bottom" id="gGV-Ui-xXC"/>
+                            <constraint firstItem="3u6-Vp-jM8" firstAttribute="top" secondItem="bhY-2x-0hS" secondAttribute="top" id="j5X-aE-xih"/>
+                            <constraint firstItem="bhY-2x-0hS" firstAttribute="bottom" secondItem="DJ2-3M-Qf4" secondAttribute="bottom" constant="10" id="mBS-6X-Ghv"/>
+                            <constraint firstItem="3u6-Vp-jM8" firstAttribute="leading" secondItem="bhY-2x-0hS" secondAttribute="leading" id="yCi-z3-KiV"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="fr6-8Y-IcJ"/>
+                    <connections>
+                        <segue destination="umZ-K6-yvJ" kind="show" identifier="4" id="YcB-Xr-OL4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xg6-d1-qc7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2039.1304347826087" y="334.82142857142856"/>
+        </scene>
+        <!--Fourth View Controller-->
+        <scene sceneID="a5u-Ym-zFN">
+            <objects>
+                <viewController id="umZ-K6-yvJ" customClass="fourthViewController" customModule="Mantram_of_the_Will" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fJS-Xh-KfD">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="4" translatesAutoresizingMaskIntoConstraints="NO" id="eqT-RJ-70m">
+                                <rect key="frame" x="0.0" y="88" width="428" height="804"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Creates the Realization" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0kw-MI-0dx">
+                                <rect key="frame" x="126.33333333333333" y="861" width="175.33333333333337" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rby-hL-dZB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="eqT-RJ-70m" firstAttribute="leading" secondItem="rby-hL-dZB" secondAttribute="leading" id="0Dh-eW-tmq"/>
+                            <constraint firstItem="0kw-MI-0dx" firstAttribute="centerX" secondItem="fJS-Xh-KfD" secondAttribute="centerX" id="3LD-He-ZaR"/>
+                            <constraint firstItem="rby-hL-dZB" firstAttribute="trailing" secondItem="eqT-RJ-70m" secondAttribute="trailing" id="bBJ-ac-mIg"/>
+                            <constraint firstItem="eqT-RJ-70m" firstAttribute="top" secondItem="rby-hL-dZB" secondAttribute="top" id="ec8-lw-b6j"/>
+                            <constraint firstItem="rby-hL-dZB" firstAttribute="bottom" secondItem="0kw-MI-0dx" secondAttribute="bottom" constant="10" id="uJm-E7-lUv"/>
+                            <constraint firstItem="rby-hL-dZB" firstAttribute="bottom" secondItem="eqT-RJ-70m" secondAttribute="bottom" id="ymy-Wq-iXf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="eCJ-q8-CdV"/>
+                    <connections>
+                        <segue destination="Vf1-4l-Bom" kind="show" identifier="5" id="PZk-i9-Qem"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r6f-lz-sCf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2971.0144927536235" y="366.96428571428572"/>
+        </scene>
+        <!--Fifth View Controller-->
+        <scene sceneID="7CX-wh-el5">
+            <objects>
+                <viewController id="Vf1-4l-Bom" customClass="fifthViewController" customModule="Mantram_of_the_Will" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NeR-Dw-Vc5">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="5" translatesAutoresizingMaskIntoConstraints="NO" id="w0B-MR-rTH">
+                                <rect key="frame" x="0.0" y="88" width="428" height="804"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="of a Power Which it Uses or Abuses According to Good or Bad Inspiration" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="agC-J4-iId">
+                                <rect key="frame" x="20" y="850.33333333333337" width="388" height="40.666666666666629"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="8VQ-Ub-1Tv"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8VQ-Ub-1Tv" firstAttribute="bottom" secondItem="w0B-MR-rTH" secondAttribute="bottom" id="CIi-B2-rcf"/>
+                            <constraint firstItem="agC-J4-iId" firstAttribute="leading" secondItem="NeR-Dw-Vc5" secondAttribute="leading" constant="20" id="F2a-He-eHm"/>
+                            <constraint firstItem="8VQ-Ub-1Tv" firstAttribute="bottom" secondItem="agC-J4-iId" secondAttribute="bottom" constant="1" id="QXP-eD-Y1z"/>
+                            <constraint firstItem="8VQ-Ub-1Tv" firstAttribute="trailing" secondItem="w0B-MR-rTH" secondAttribute="trailing" id="RGy-E9-3oy"/>
+                            <constraint firstItem="w0B-MR-rTH" firstAttribute="leading" secondItem="8VQ-Ub-1Tv" secondAttribute="leading" id="Yfb-nC-nQF"/>
+                            <constraint firstAttribute="trailing" secondItem="agC-J4-iId" secondAttribute="trailing" constant="20" id="dGK-vg-nYh"/>
+                            <constraint firstItem="w0B-MR-rTH" firstAttribute="top" secondItem="8VQ-Ub-1Tv" secondAttribute="top" id="fl3-Mn-aFF"/>
+                            <constraint firstItem="agC-J4-iId" firstAttribute="centerX" secondItem="NeR-Dw-Vc5" secondAttribute="centerX" id="qMN-Mw-dYF"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Tei-mC-Ebv"/>
+                    <connections>
+                        <segue destination="iSN-lV-vSZ" kind="show" identifier="6" id="6Si-Ux-tdI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uRW-uL-tNg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3797.1014492753625" y="366.96428571428572"/>
+        </scene>
+        <!--Sixth View Controller-->
+        <scene sceneID="fZ4-Cb-Q3N">
+            <objects>
+                <viewController id="iSN-lV-vSZ" customClass="sixthViewController" customModule="Mantram_of_the_Will" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Mja-mC-kug">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="6" translatesAutoresizingMaskIntoConstraints="NO" id="o8B-1a-U28">
+                                <rect key="frame" x="0.0" y="88" width="428" height="804"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="in the Circle Which Has Been Traced for it by the Laws of Universal Order. After Having Surmounted the Trial " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r6h-Fa-34Q">
+                                <rect key="frame" x="20" y="846" width="388" height="61"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="sas-Nz-I9y"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="sas-Nz-I9y" firstAttribute="bottom" secondItem="r6h-Fa-34Q" secondAttribute="bottom" constant="-15" id="2HH-zl-sqq"/>
+                            <constraint firstItem="r6h-Fa-34Q" firstAttribute="centerX" secondItem="Mja-mC-kug" secondAttribute="centerX" id="6wp-c1-OLa"/>
+                            <constraint firstItem="o8B-1a-U28" firstAttribute="top" secondItem="sas-Nz-I9y" secondAttribute="top" id="FyG-bx-1a2"/>
+                            <constraint firstItem="r6h-Fa-34Q" firstAttribute="leading" secondItem="Mja-mC-kug" secondAttribute="leading" constant="20" id="b0n-S9-WAd"/>
+                            <constraint firstAttribute="trailing" secondItem="r6h-Fa-34Q" secondAttribute="trailing" constant="20" id="ojw-wl-Ofu"/>
+                            <constraint firstItem="o8B-1a-U28" firstAttribute="leading" secondItem="sas-Nz-I9y" secondAttribute="leading" id="sgx-vk-BaG"/>
+                            <constraint firstItem="sas-Nz-I9y" firstAttribute="trailing" secondItem="o8B-1a-U28" secondAttribute="trailing" id="t8P-Wg-yYx"/>
+                            <constraint firstItem="sas-Nz-I9y" firstAttribute="bottom" secondItem="o8B-1a-U28" secondAttribute="bottom" id="wuu-ac-YSN"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="feD-bs-rof"/>
+                    <connections>
+                        <segue destination="C07-27-MXF" kind="show" identifier="7" id="y00-uk-Ynz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8bK-Ar-bxW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4592.753623188406" y="334.82142857142856"/>
+        </scene>
+        <!--Seventh View Controller-->
+        <scene sceneID="l9O-5z-EaQ">
+            <objects>
+                <viewController id="C07-27-MXF" customClass="seventhViewController" customModule="Mantram_of_the_Will" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rCr-da-XFI">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="7" translatesAutoresizingMaskIntoConstraints="NO" id="rLa-gP-t0d">
+                                <rect key="frame" x="0.0" y="88" width="428" height="804"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Which has been Imposed by Divine Wisdom, he will Enter by His Victory " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y6e-ws-wb6">
+                                <rect key="frame" x="20" y="846.33333333333337" width="388" height="40.666666666666629"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="irc-h5-m0D"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="y6e-ws-wb6" secondAttribute="trailing" constant="20" id="70s-Rr-4Ne"/>
+                            <constraint firstItem="irc-h5-m0D" firstAttribute="trailing" secondItem="rLa-gP-t0d" secondAttribute="trailing" id="AgP-SL-5LM"/>
+                            <constraint firstItem="rLa-gP-t0d" firstAttribute="leading" secondItem="irc-h5-m0D" secondAttribute="leading" id="BeN-UI-DGe"/>
+                            <constraint firstItem="y6e-ws-wb6" firstAttribute="centerX" secondItem="rCr-da-XFI" secondAttribute="centerX" id="LYJ-YM-HYD"/>
+                            <constraint firstItem="irc-h5-m0D" firstAttribute="bottom" secondItem="y6e-ws-wb6" secondAttribute="bottom" constant="5" id="itV-7I-BHT"/>
+                            <constraint firstItem="y6e-ws-wb6" firstAttribute="leading" secondItem="rCr-da-XFI" secondAttribute="leading" constant="20" id="knM-IS-jTa"/>
+                            <constraint firstItem="rLa-gP-t0d" firstAttribute="top" secondItem="irc-h5-m0D" secondAttribute="top" id="o1j-Zm-chR"/>
+                            <constraint firstItem="irc-h5-m0D" firstAttribute="bottom" secondItem="rLa-gP-t0d" secondAttribute="bottom" id="t4N-Vv-Ndy"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="rEb-Tx-nYE"/>
+                    <connections>
+                        <segue destination="vWB-zQ-b5e" kind="show" identifier="8" id="99B-c4-thP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WlO-Sn-Gnu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5650.7246376811599" y="334.82142857142856"/>
+        </scene>
+        <!--Eighth View Controller-->
+        <scene sceneID="W1o-bS-68f">
+            <objects>
+                <viewController id="vWB-zQ-b5e" customClass="eighthViewController" customModule="Mantram_of_the_Will" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="86r-co-7P0">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="8" translatesAutoresizingMaskIntoConstraints="NO" id="OIl-Z4-9is" customClass="ei">
+                                <rect key="frame" x="0.0" y="88" width="428" height="804"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Into Possession of the Work it has Created, and Establishing his Equilibrium " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="piu-YR-TKa">
+                                <rect key="frame" x="20" y="846.33333333333337" width="388" height="40.666666666666629"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bDX-VO-w5b"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bDX-VO-w5b" firstAttribute="bottom" secondItem="piu-YR-TKa" secondAttribute="bottom" constant="5" id="FCQ-IS-fzM"/>
+                            <constraint firstItem="bDX-VO-w5b" firstAttribute="trailing" secondItem="OIl-Z4-9is" secondAttribute="trailing" id="GRU-av-1jv"/>
+                            <constraint firstAttribute="trailing" secondItem="piu-YR-TKa" secondAttribute="trailing" constant="20" id="PH8-E1-nMq"/>
+                            <constraint firstItem="OIl-Z4-9is" firstAttribute="top" secondItem="bDX-VO-w5b" secondAttribute="top" id="ekP-l2-k6I"/>
+                            <constraint firstItem="piu-YR-TKa" firstAttribute="leading" secondItem="86r-co-7P0" secondAttribute="leading" constant="20" id="frP-8y-ZyH"/>
+                            <constraint firstItem="piu-YR-TKa" firstAttribute="centerX" secondItem="86r-co-7P0" secondAttribute="centerX" id="gL6-aU-Vdj"/>
+                            <constraint firstItem="bDX-VO-w5b" firstAttribute="bottom" secondItem="OIl-Z4-9is" secondAttribute="bottom" id="rox-Cl-XVj"/>
+                            <constraint firstItem="OIl-Z4-9is" firstAttribute="leading" secondItem="bDX-VO-w5b" secondAttribute="leading" id="tPh-Mp-hpZ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="UH9-Ci-2Yy"/>
+                    <connections>
+                        <segue destination="ZCD-Cf-lfz" kind="show" identifier="9" id="E4N-6x-eNr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zhj-oT-mM0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1509" y="1227"/>
+        </scene>
+        <!--Ninthth View Controller-->
+        <scene sceneID="wdx-nS-mkx">
+            <objects>
+                <viewController id="ZCD-Cf-lfz" customClass="ninththViewController" customModule="Mantram_of_the_Will" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rh8-wQ-qSi">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upon the Axis of Prudence" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WSU-Lt-k6J">
+                                <rect key="frame" x="112.33333333333333" y="861" width="203.33333333333337" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="9" translatesAutoresizingMaskIntoConstraints="NO" id="duR-u8-GGe">
+                                <rect key="frame" x="0.0" y="88" width="428" height="804"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="wH1-o6-O1V"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="duR-u8-GGe" firstAttribute="top" secondItem="wH1-o6-O1V" secondAttribute="top" id="8MP-WW-lhE"/>
+                            <constraint firstItem="wH1-o6-O1V" firstAttribute="bottom" secondItem="duR-u8-GGe" secondAttribute="bottom" id="AJx-wn-NdT"/>
+                            <constraint firstItem="wH1-o6-O1V" firstAttribute="trailing" secondItem="duR-u8-GGe" secondAttribute="trailing" id="JM3-Tl-4vV"/>
+                            <constraint firstItem="duR-u8-GGe" firstAttribute="leading" secondItem="wH1-o6-O1V" secondAttribute="leading" id="bne-JL-dOH"/>
+                            <constraint firstItem="wH1-o6-O1V" firstAttribute="bottom" secondItem="WSU-Lt-k6J" secondAttribute="bottom" constant="10" id="lbG-zi-g3u"/>
+                            <constraint firstItem="WSU-Lt-k6J" firstAttribute="centerX" secondItem="rh8-wQ-qSi" secondAttribute="centerX" id="s0j-dU-Scc"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="bmJ-di-Dbg"/>
+                    <connections>
+                        <segue destination="t24-3B-8jo" kind="show" identifier="10" id="YDV-hX-rpy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Vt-mr-0tp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-572" y="1227"/>
+        </scene>
+        <!--Tenth View Controller-->
+        <scene sceneID="0Bh-4v-vdI">
+            <objects>
+                <viewController id="t24-3B-8jo" customClass="tenthViewController" customModule="Mantram_of_the_Will" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cZP-hU-qQG">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yfe-ZK-oa6">
+                                <rect key="frame" x="108.00000000000001" y="841.33333333333337" width="212.33333333333337" height="40.666666666666629"/>
+                                <string key="text">He Will Rule the Oscillations
+of Fortune</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="10" translatesAutoresizingMaskIntoConstraints="NO" id="tn3-xl-Z5d">
+                                <rect key="frame" x="0.0" y="88" width="428" height="804"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="BN5-S9-dxN"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="BN5-S9-dxN" firstAttribute="trailing" secondItem="tn3-xl-Z5d" secondAttribute="trailing" id="3nL-yi-7Wn"/>
+                            <constraint firstItem="tn3-xl-Z5d" firstAttribute="leading" secondItem="BN5-S9-dxN" secondAttribute="leading" id="6me-tG-0sB"/>
+                            <constraint firstItem="yfe-ZK-oa6" firstAttribute="centerX" secondItem="cZP-hU-qQG" secondAttribute="centerX" id="R1W-xJ-sxT"/>
+                            <constraint firstItem="BN5-S9-dxN" firstAttribute="bottom" secondItem="yfe-ZK-oa6" secondAttribute="bottom" constant="10" id="bOh-1i-8GF"/>
+                            <constraint firstItem="BN5-S9-dxN" firstAttribute="bottom" secondItem="yfe-ZK-oa6" secondAttribute="bottom" id="fIV-8M-lfR"/>
+                            <constraint firstItem="BN5-S9-dxN" firstAttribute="bottom" secondItem="tn3-xl-Z5d" secondAttribute="bottom" id="iVA-WD-l7y"/>
+                            <constraint firstItem="tn3-xl-Z5d" firstAttribute="top" secondItem="BN5-S9-dxN" secondAttribute="top" id="ief-jt-A0i"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="hwx-lg-dNc"/>
+                    <connections>
+                        <segue destination="epm-b5-qqn" kind="show" identifier="11" id="uml-pL-DqT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ljD-eE-m6I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="291" y="1228"/>
+        </scene>
+        <!--Eleventh View Controller-->
+        <scene sceneID="Fwg-qL-brt">
+            <objects>
+                <viewController id="epm-b5-qqn" customClass="eleventhViewController" customModule="Mantram_of_the_Will" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nPZ-gx-Ftt">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="11" translatesAutoresizingMaskIntoConstraints="NO" id="roa-rp-53B">
+                                <rect key="frame" x="0.0" y="88" width="428" height="804"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Force" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8kf-dj-jyz">
+                                <rect key="frame" x="175.66666666666666" y="861" width="77" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="QkQ-k4-Ep9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="QkQ-k4-Ep9" firstAttribute="trailing" secondItem="roa-rp-53B" secondAttribute="trailing" id="7fo-er-0tN"/>
+                            <constraint firstItem="8kf-dj-jyz" firstAttribute="centerX" secondItem="nPZ-gx-Ftt" secondAttribute="centerX" id="KPE-5u-6C4"/>
+                            <constraint firstItem="roa-rp-53B" firstAttribute="top" secondItem="QkQ-k4-Ep9" secondAttribute="top" id="MqM-2G-6S7"/>
+                            <constraint firstItem="QkQ-k4-Ep9" firstAttribute="bottom" secondItem="roa-rp-53B" secondAttribute="bottom" id="Qgj-my-BsT"/>
+                            <constraint firstItem="QkQ-k4-Ep9" firstAttribute="bottom" secondItem="8kf-dj-jyz" secondAttribute="bottom" constant="10" id="VRw-XS-eXF"/>
+                            <constraint firstItem="roa-rp-53B" firstAttribute="leading" secondItem="QkQ-k4-Ep9" secondAttribute="leading" id="fLK-V2-Iwc"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="f4K-E9-rIU"/>
+                    <connections>
+                        <segue destination="pWi-2r-3oc" kind="show" identifier="12" id="wba-cj-IWK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ast-MC-sI7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1090" y="1141"/>
+        </scene>
+        <!--Twentysecond View Controller-->
+        <scene sceneID="idt-AE-93r">
+            <objects>
+                <viewController id="aJI-Zu-VtY" customClass="twentysecondViewController" customModule="Mantram_of_the_Will" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jlH-6q-uiJ">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="22" translatesAutoresizingMaskIntoConstraints="NO" id="JBj-n1-C7m">
+                                <rect key="frame" x="0.0" y="44" width="428" height="828"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Eternal of Freed Spirits " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B6D-zF-B49">
+                                <rect key="frame" x="20" y="841" width="388" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="i2W-vh-ZO4"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="B6D-zF-B49" firstAttribute="leading" secondItem="i2W-vh-ZO4" secondAttribute="leading" constant="20" id="8Py-h2-Qk5"/>
+                            <constraint firstItem="JBj-n1-C7m" firstAttribute="top" secondItem="i2W-vh-ZO4" secondAttribute="top" id="BNc-8S-hp9"/>
+                            <constraint firstItem="i2W-vh-ZO4" firstAttribute="trailing" secondItem="B6D-zF-B49" secondAttribute="trailing" constant="20" id="En6-WV-TmG"/>
+                            <constraint firstItem="i2W-vh-ZO4" firstAttribute="trailing" secondItem="JBj-n1-C7m" secondAttribute="trailing" id="N90-5Y-J6j"/>
+                            <constraint firstItem="JBj-n1-C7m" firstAttribute="leading" secondItem="i2W-vh-ZO4" secondAttribute="leading" id="NB6-QA-iq4"/>
+                            <constraint firstItem="i2W-vh-ZO4" firstAttribute="bottom" secondItem="JBj-n1-C7m" secondAttribute="bottom" id="Rbi-9a-UNJ"/>
+                            <constraint firstItem="i2W-vh-ZO4" firstAttribute="bottom" secondItem="B6D-zF-B49" secondAttribute="bottom" constant="10" id="kr3-ky-qPA"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="zGn-sV-gCb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HUc-Ke-nva" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4810" y="1988"/>
+        </scene>
+        <!--Zero View Controller-->
+        <scene sceneID="56H-IM-7x2">
+            <objects>
+                <viewController id="Gzg-AF-QqI" customClass="zeroViewController" customModule="Mantram_of_the_Will" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cqU-Bq-VNX">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="q7d-XC-FOi">
+                                <rect key="frame" x="0.0" y="44" width="428" height="828"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ayX-Jf-ky0">
+                                <rect key="frame" x="20" y="834.66666666666663" width="388" height="57.333333333333371"/>
+                                <string key="text">After the Renewal of His Being by Death, Which Opens to Him a Higher Sphere of Will, Intelligence and Action. Every Will that lets itself be Governed by the Instincts of the Flesh Abdicates its Liberty and is Bound to the Expiation</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="2WK-eb-hcv"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2WK-eb-hcv" firstAttribute="bottom" secondItem="q7d-XC-FOi" secondAttribute="bottom" id="8kX-tJ-uX0"/>
+                            <constraint firstItem="2WK-eb-hcv" firstAttribute="bottom" secondItem="ayX-Jf-ky0" secondAttribute="bottom" constant="-20" id="At0-AS-prU"/>
+                            <constraint firstItem="q7d-XC-FOi" firstAttribute="top" secondItem="2WK-eb-hcv" secondAttribute="top" id="Wkn-hq-Jtw"/>
+                            <constraint firstItem="ayX-Jf-ky0" firstAttribute="centerX" secondItem="cqU-Bq-VNX" secondAttribute="centerX" id="anX-Cx-XlK"/>
+                            <constraint firstItem="2WK-eb-hcv" firstAttribute="trailing" secondItem="q7d-XC-FOi" secondAttribute="trailing" id="b9V-El-eE3"/>
+                            <constraint firstItem="q7d-XC-FOi" firstAttribute="leading" secondItem="2WK-eb-hcv" secondAttribute="leading" id="eei-q4-NG5"/>
+                            <constraint firstItem="ayX-Jf-ky0" firstAttribute="leading" secondItem="cqU-Bq-VNX" secondAttribute="leading" constant="20" id="vig-Jj-Pta"/>
+                            <constraint firstAttribute="trailing" secondItem="ayX-Jf-ky0" secondAttribute="trailing" constant="20" id="wT7-Ij-Bg5"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="9qk-sU-M2i"/>
+                    <connections>
+                        <segue destination="6EB-AM-DTw" kind="showDetail" identifier="21" id="tnS-iv-zRT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Opa-Pw-Dgb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3128" y="1988"/>
+        </scene>
+        <!--Seventeenth View Controller-->
+        <scene sceneID="m81-W7-Ahc">
+            <objects>
+                <viewController id="aKU-Bh-2Ew" customClass="seventeenthViewController" customModule="Mantram_of_the_Will" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="duB-mI-Vn2">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="17" translatesAutoresizingMaskIntoConstraints="NO" id="A1a-hj-lP7">
+                                <rect key="frame" x="0.0" y="44" width="428" height="828"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="but Beyond Every Ruin One Sees Reappear the Dawn of Hope" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JF6-3n-3uo">
+                                <rect key="frame" x="20" y="821.33333333333337" width="388" height="40.666666666666629"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="M8g-vM-eQP"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="M8g-vM-eQP" firstAttribute="bottom" secondItem="JF6-3n-3uo" secondAttribute="bottom" id="MkR-ur-DCJ"/>
+                            <constraint firstItem="A1a-hj-lP7" firstAttribute="leading" secondItem="M8g-vM-eQP" secondAttribute="leading" id="V7H-E0-DBN"/>
+                            <constraint firstItem="A1a-hj-lP7" firstAttribute="top" secondItem="M8g-vM-eQP" secondAttribute="top" id="WFE-DU-B3B"/>
+                            <constraint firstItem="M8g-vM-eQP" firstAttribute="bottom" secondItem="JF6-3n-3uo" secondAttribute="bottom" constant="10" id="bSV-qf-0kA"/>
+                            <constraint firstItem="M8g-vM-eQP" firstAttribute="trailing" secondItem="A1a-hj-lP7" secondAttribute="trailing" id="jAt-Bm-Qdv"/>
+                            <constraint firstItem="JF6-3n-3uo" firstAttribute="centerX" secondItem="duB-mI-Vn2" secondAttribute="centerX" id="kTW-QR-gCd"/>
+                            <constraint firstItem="M8g-vM-eQP" firstAttribute="bottom" secondItem="A1a-hj-lP7" secondAttribute="bottom" id="l1X-JT-7RK"/>
+                            <constraint firstItem="JF6-3n-3uo" firstAttribute="leading" secondItem="M8g-vM-eQP" secondAttribute="leading" constant="20" id="nfl-Z1-9iZ"/>
+                            <constraint firstItem="M8g-vM-eQP" firstAttribute="trailing" secondItem="JF6-3n-3uo" secondAttribute="trailing" constant="20" id="zwB-bs-1PZ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="vTc-bg-BEI"/>
+                    <connections>
+                        <segue destination="Fgg-qU-GB1" kind="show" identifier="18" id="qU3-N0-zCC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pZb-zT-XlX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-128" y="2115"/>
+        </scene>
+        <!--Twelfth View Controller-->
+        <scene sceneID="Li5-V1-kEg">
+            <objects>
+                <viewController id="pWi-2r-3oc" customClass="twelfthViewController" customModule="Mantram_of_the_Will" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aSJ-nx-kxr">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="12" translatesAutoresizingMaskIntoConstraints="NO" id="luQ-UZ-f1L">
+                                <rect key="frame" x="0.0" y="88" width="428" height="804"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="of Man, Sanctified by Sacrifice" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AmU-v1-i6l">
+                                <rect key="frame" x="98.333333333333329" y="861.66666666666663" width="231.33333333333337" height="20.333333333333371"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Y8y-rw-JPx"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="luQ-UZ-f1L" firstAttribute="leading" secondItem="Y8y-rw-JPx" secondAttribute="leading" id="4jp-uT-EI6"/>
+                            <constraint firstItem="AmU-v1-i6l" firstAttribute="centerX" secondItem="aSJ-nx-kxr" secondAttribute="centerX" id="6n7-aY-J4K"/>
+                            <constraint firstItem="Y8y-rw-JPx" firstAttribute="trailing" secondItem="luQ-UZ-f1L" secondAttribute="trailing" id="QTh-g7-gk4"/>
+                            <constraint firstItem="Y8y-rw-JPx" firstAttribute="bottom" secondItem="AmU-v1-i6l" secondAttribute="bottom" constant="10" id="dlV-qi-GAx"/>
+                            <constraint firstItem="luQ-UZ-f1L" firstAttribute="top" secondItem="Y8y-rw-JPx" secondAttribute="top" id="rJr-l0-Tah"/>
+                            <constraint firstItem="Y8y-rw-JPx" firstAttribute="bottom" secondItem="luQ-UZ-f1L" secondAttribute="bottom" id="t5K-VI-KBY"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ASO-po-ApM"/>
+                    <connections>
+                        <segue destination="qIA-8R-EtP" kind="showDetail" identifier="13" id="hbf-S1-eKb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TqB-0u-qAd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1862" y="1242"/>
+        </scene>
+        <!--Thirteenth View Controller-->
+        <scene sceneID="mg5-CZ-o2s">
+            <objects>
+                <viewController id="qIA-8R-EtP" customClass="thirteenthViewController" customModule="Mantram_of_the_Will" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Mwy-MG-mdg">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="13" translatesAutoresizingMaskIntoConstraints="NO" id="ZHK-nk-gbh">
+                                <rect key="frame" x="0.0" y="44" width="428" height="828"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PqV-hK-PAb">
+                                <rect key="frame" x="20" y="838" width="388" height="54"/>
+                                <string key="text">Which is the Voluntary Offer of Himself upon the Altar of Devotion or Expiation, Triumphs over Death. This Divine Transformation </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="UgA-aC-U5z"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ZHK-nk-gbh" firstAttribute="leading" secondItem="UgA-aC-U5z" secondAttribute="leading" id="2nZ-Zd-PfQ"/>
+                            <constraint firstItem="ZHK-nk-gbh" firstAttribute="top" secondItem="UgA-aC-U5z" secondAttribute="top" id="7y9-8d-BM2"/>
+                            <constraint firstItem="ZHK-nk-gbh" firstAttribute="bottom" secondItem="UgA-aC-U5z" secondAttribute="bottom" id="GC6-hV-3Zi"/>
+                            <constraint firstItem="ZHK-nk-gbh" firstAttribute="top" secondItem="UgA-aC-U5z" secondAttribute="top" id="SFd-nX-cAu"/>
+                            <constraint firstAttribute="trailing" secondItem="PqV-hK-PAb" secondAttribute="trailing" constant="20" id="bH8-zO-Xy0"/>
+                            <constraint firstItem="ZHK-nk-gbh" firstAttribute="leading" secondItem="UgA-aC-U5z" secondAttribute="leading" id="bRf-QA-fnb"/>
+                            <constraint firstItem="UgA-aC-U5z" firstAttribute="bottom" secondItem="PqV-hK-PAb" secondAttribute="bottom" constant="-20" id="chd-S9-6q1"/>
+                            <constraint firstItem="UgA-aC-U5z" firstAttribute="bottom" secondItem="ZHK-nk-gbh" secondAttribute="bottom" id="f4x-A7-eY9"/>
+                            <constraint firstItem="ZHK-nk-gbh" firstAttribute="trailing" secondItem="UgA-aC-U5z" secondAttribute="trailing" id="fqc-a9-W9Y"/>
+                            <constraint firstItem="PqV-hK-PAb" firstAttribute="centerX" secondItem="Mwy-MG-mdg" secondAttribute="centerX" id="jpm-7A-wxJ"/>
+                            <constraint firstItem="PqV-hK-PAb" firstAttribute="leading" secondItem="Mwy-MG-mdg" secondAttribute="leading" constant="20" id="mof-dQ-UUf"/>
+                            <constraint firstItem="UgA-aC-U5z" firstAttribute="trailing" secondItem="ZHK-nk-gbh" secondAttribute="trailing" id="oOf-J0-eC5"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="beY-14-3KS"/>
+                    <connections>
+                        <segue destination="vKg-Sv-dFi" kind="showDetail" identifier="14" id="XR4-m4-J9k"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dwY-7f-JJ4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2662" y="1242"/>
+        </scene>
+        <!--Fourteenth View Controller-->
+        <scene sceneID="Z5L-OO-pMy">
+            <objects>
+                <viewController id="vKg-Sv-dFi" customClass="fourteenthViewController" customModule="Mantram_of_the_Will" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WwR-F6-ctI">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="14" translatesAutoresizingMaskIntoConstraints="NO" id="yEo-UP-2hS">
+                                <rect key="frame" x="0.0" y="44" width="428" height="828"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Raises Him Beyond the Tomb into the Serene Region of Infinite Progress and Opposes the Reality of Initiative " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LAI-F3-pfo">
+                                <rect key="frame" x="20" y="801" width="388" height="61"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ltm-kb-zrc"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="LAI-F3-pfo" firstAttribute="leading" secondItem="WwR-F6-ctI" secondAttribute="leading" constant="20" id="0h4-Ru-9om"/>
+                            <constraint firstItem="ltm-kb-zrc" firstAttribute="bottom" secondItem="yEo-UP-2hS" secondAttribute="bottom" id="ZxG-xg-tuh"/>
+                            <constraint firstItem="ltm-kb-zrc" firstAttribute="trailing" secondItem="yEo-UP-2hS" secondAttribute="trailing" id="aGw-QA-xsf"/>
+                            <constraint firstItem="ltm-kb-zrc" firstAttribute="bottom" secondItem="LAI-F3-pfo" secondAttribute="bottom" constant="-15" id="cCG-8I-DlR"/>
+                            <constraint firstAttribute="trailing" secondItem="LAI-F3-pfo" secondAttribute="trailing" constant="20" id="cVC-zC-8ov"/>
+                            <constraint firstItem="LAI-F3-pfo" firstAttribute="centerX" secondItem="WwR-F6-ctI" secondAttribute="centerX" id="daa-ON-YGH"/>
+                            <constraint firstItem="yEo-UP-2hS" firstAttribute="leading" secondItem="ltm-kb-zrc" secondAttribute="leading" id="edF-xg-kon"/>
+                            <constraint firstItem="yEo-UP-2hS" firstAttribute="top" secondItem="ltm-kb-zrc" secondAttribute="top" id="jRA-Xd-zKP"/>
+                            <constraint firstItem="ltm-kb-zrc" firstAttribute="bottom" secondItem="LAI-F3-pfo" secondAttribute="bottom" constant="10" id="th7-gb-lao"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="wo8-B1-DUn"/>
+                    <connections>
+                        <segue destination="Rh8-c8-fc5" kind="show" identifier="15" id="VEk-fq-gx2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HCO-Xy-rfd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3559" y="1258"/>
+        </scene>
+        <!--Eighteenth View Controller-->
+        <scene sceneID="90a-gr-dfV">
+            <objects>
+                <viewController id="Fgg-qU-GB1" customClass="eighteenthViewController" customModule="Mantram_of_the_Will" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zdJ-mr-u0t">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="18" translatesAutoresizingMaskIntoConstraints="NO" id="3Ay-G4-a16">
+                                <rect key="frame" x="0.0" y="44" width="428" height="828"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="or the twilight of Deception " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="faC-8Y-oWF">
+                                <rect key="frame" x="108.66666666666669" y="841" width="211" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="U97-Ut-OKm"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="3Ay-G4-a16" firstAttribute="leading" secondItem="U97-Ut-OKm" secondAttribute="leading" id="25S-Bb-ygn"/>
+                            <constraint firstItem="U97-Ut-OKm" firstAttribute="bottom" secondItem="faC-8Y-oWF" secondAttribute="bottom" constant="10" id="6N1-3D-US6"/>
+                            <constraint firstItem="U97-Ut-OKm" firstAttribute="bottom" secondItem="3Ay-G4-a16" secondAttribute="bottom" id="HxR-Ar-zSA"/>
+                            <constraint firstItem="faC-8Y-oWF" firstAttribute="centerX" secondItem="zdJ-mr-u0t" secondAttribute="centerX" id="X9H-iX-gvW"/>
+                            <constraint firstItem="3Ay-G4-a16" firstAttribute="top" secondItem="U97-Ut-OKm" secondAttribute="top" id="c8m-AQ-UXb"/>
+                            <constraint firstItem="U97-Ut-OKm" firstAttribute="trailing" secondItem="3Ay-G4-a16" secondAttribute="trailing" id="qdb-ev-Yp3"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="kl8-xK-6iI"/>
+                    <connections>
+                        <segue destination="vXC-I2-9cR" kind="showDetail" identifier="19" id="swg-ee-Ix5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6a6-O9-ba4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="971" y="2042"/>
+        </scene>
+        <!--Nineteenth View Controller-->
+        <scene sceneID="dxD-eA-rSV">
+            <objects>
+                <viewController id="vXC-I2-9cR" customClass="nineteenthViewController" customModule="Mantram_of_the_Will" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rtE-dn-vSW">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="19" translatesAutoresizingMaskIntoConstraints="NO" id="xIV-uO-bK0">
+                                <rect key="frame" x="0.0" y="44" width="428" height="828"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unceasingly, man aspires to that which ever flees from Him, and the Sun of Happiness" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="chs-yH-tu5">
+                                <rect key="frame" x="20" y="821.33333333333337" width="388" height="40.666666666666629"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="aPw-j0-6Gi"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="xIV-uO-bK0" firstAttribute="leading" secondItem="aPw-j0-6Gi" secondAttribute="leading" id="DKk-pP-p5Z"/>
+                            <constraint firstItem="xIV-uO-bK0" firstAttribute="top" secondItem="aPw-j0-6Gi" secondAttribute="top" id="E0E-gg-i1T"/>
+                            <constraint firstItem="aPw-j0-6Gi" firstAttribute="bottom" secondItem="chs-yH-tu5" secondAttribute="bottom" constant="10" id="OT6-CW-KMy"/>
+                            <constraint firstItem="aPw-j0-6Gi" firstAttribute="bottom" secondItem="chs-yH-tu5" secondAttribute="bottom" id="Ss8-2A-fro"/>
+                            <constraint firstItem="chs-yH-tu5" firstAttribute="centerX" secondItem="rtE-dn-vSW" secondAttribute="centerX" id="Tl0-cs-JUC"/>
+                            <constraint firstAttribute="trailing" secondItem="chs-yH-tu5" secondAttribute="trailing" constant="20" id="enP-tI-PwE"/>
+                            <constraint firstItem="chs-yH-tu5" firstAttribute="leading" secondItem="rtE-dn-vSW" secondAttribute="leading" constant="20" id="meM-tx-XmI"/>
+                            <constraint firstItem="aPw-j0-6Gi" firstAttribute="bottom" secondItem="xIV-uO-bK0" secondAttribute="bottom" id="nVd-cp-BjN"/>
+                            <constraint firstItem="aPw-j0-6Gi" firstAttribute="trailing" secondItem="xIV-uO-bK0" secondAttribute="trailing" id="pW1-GT-9kR"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="DiT-wh-EqW"/>
+                    <connections>
+                        <segue destination="zEJ-Di-MfH" kind="showDetail" identifier="20" id="Wzv-ux-RWU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zlS-zp-Jnh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1677" y="2054"/>
+        </scene>
+        <!--Twentith View Controller-->
+        <scene sceneID="pc9-fE-WwD">
+            <objects>
+                <viewController id="zEJ-Di-MfH" customClass="twentithViewController" customModule="Mantram_of_the_Will" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RAO-TZ-f5v">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="20" translatesAutoresizingMaskIntoConstraints="NO" id="g8H-Ml-2a6">
+                                <rect key="frame" x="0.0" y="44" width="428" height="828"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Will Only Rise for Him Beyond the Tomb " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C9f-kT-t3T">
+                                <rect key="frame" x="61.333333333333343" y="841" width="305.33333333333326" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="sBW-Qd-cw3"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="sBW-Qd-cw3" firstAttribute="bottom" secondItem="g8H-Ml-2a6" secondAttribute="bottom" id="1UF-TI-XyO"/>
+                            <constraint firstItem="C9f-kT-t3T" firstAttribute="centerX" secondItem="RAO-TZ-f5v" secondAttribute="centerX" id="7OI-x7-J6r"/>
+                            <constraint firstItem="g8H-Ml-2a6" firstAttribute="top" secondItem="sBW-Qd-cw3" secondAttribute="top" id="Gyf-mP-kgE"/>
+                            <constraint firstItem="g8H-Ml-2a6" firstAttribute="leading" secondItem="sBW-Qd-cw3" secondAttribute="leading" id="Rsg-gv-IT6"/>
+                            <constraint firstItem="sBW-Qd-cw3" firstAttribute="bottom" secondItem="C9f-kT-t3T" secondAttribute="bottom" constant="10" id="cW3-OU-tw1"/>
+                            <constraint firstItem="sBW-Qd-cw3" firstAttribute="trailing" secondItem="g8H-Ml-2a6" secondAttribute="trailing" id="dMr-Hw-hlA"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="erz-hq-hHj"/>
+                    <connections>
+                        <segue destination="Gzg-AF-QqI" kind="show" identifier="0" id="pPu-WA-bd3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L6A-Ng-jB3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2338" y="1988"/>
+        </scene>
+        <!--Twentyfirst View Controller-->
+        <scene sceneID="c5a-CI-v0c">
+            <objects>
+                <viewController id="6EB-AM-DTw" customClass="twentyfirstViewController" customModule="Mantram_of_the_Will" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iNN-Zn-QMa">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="4" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="21" translatesAutoresizingMaskIntoConstraints="NO" id="syq-xY-nL1">
+                                <rect key="frame" x="0.0" y="44" width="428" height="828"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="46B-6j-3RH">
+                                <rect key="frame" x="20" y="834.66666666666663" width="388" height="57.333333333333371"/>
+                                <string key="text">of its Errors. On the Contrary, Every Will Which Unites Itself to Deity in Order to Manifest Truth and Work Justice, Enters Even in this Life, into a Participation of Divine Power Over Beings and Things, Recompence</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rwE-2U-Fbe">
+                                <rect key="frame" x="214" y="862" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="h7v-i2-XsI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="h7v-i2-XsI" firstAttribute="bottom" secondItem="46B-6j-3RH" secondAttribute="bottom" constant="-20" id="4kZ-uj-BHR"/>
+                            <constraint firstItem="46B-6j-3RH" firstAttribute="leading" secondItem="h7v-i2-XsI" secondAttribute="leading" constant="20" id="KDq-uU-6S2"/>
+                            <constraint firstItem="syq-xY-nL1" firstAttribute="leading" secondItem="h7v-i2-XsI" secondAttribute="leading" id="KUF-eH-Sxl"/>
+                            <constraint firstItem="syq-xY-nL1" firstAttribute="top" secondItem="h7v-i2-XsI" secondAttribute="top" id="X1r-tr-a3f"/>
+                            <constraint firstItem="h7v-i2-XsI" firstAttribute="bottom" secondItem="rwE-2U-Fbe" secondAttribute="bottom" constant="10" id="Z4w-gA-hLL"/>
+                            <constraint firstItem="h7v-i2-XsI" firstAttribute="trailing" secondItem="syq-xY-nL1" secondAttribute="trailing" id="dwJ-kt-x5Q"/>
+                            <constraint firstItem="rwE-2U-Fbe" firstAttribute="centerX" secondItem="iNN-Zn-QMa" secondAttribute="centerX" id="dyA-io-eMn"/>
+                            <constraint firstItem="h7v-i2-XsI" firstAttribute="bottom" secondItem="syq-xY-nL1" secondAttribute="bottom" id="v5l-Eo-p5c"/>
+                            <constraint firstItem="h7v-i2-XsI" firstAttribute="trailing" secondItem="46B-6j-3RH" secondAttribute="trailing" constant="20" id="z3t-H8-3xA"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="1Af-LU-1hQ"/>
+                    <connections>
+                        <segue destination="aJI-Zu-VtY" kind="show" identifier="22" id="0t0-bs-rDp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NZl-6N-0kL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4048" y="1988"/>
+        </scene>
+        <!--Fifteenth View Controller-->
+        <scene sceneID="H68-4v-ni8">
+            <objects>
+                <viewController id="Rh8-c8-fc5" customClass="fifteenthViewController" customModule="Mantram_of_the_Will" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XXI-lN-PSt">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="15" translatesAutoresizingMaskIntoConstraints="NO" id="DLP-mi-c3Y">
+                                <rect key="frame" x="0.0" y="44" width="428" height="828"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="to the Eternal Falsehood of Fatality" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZCm-TX-NDz">
+                                <rect key="frame" x="82.666666666666686" y="841" width="263" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="VW9-5e-5P3"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="VW9-5e-5P3" firstAttribute="bottom" secondItem="ZCm-TX-NDz" secondAttribute="bottom" constant="10" id="AgR-Rj-oug"/>
+                            <constraint firstItem="DLP-mi-c3Y" firstAttribute="leading" secondItem="VW9-5e-5P3" secondAttribute="leading" id="FQz-Qu-qcu"/>
+                            <constraint firstItem="VW9-5e-5P3" firstAttribute="bottom" secondItem="DLP-mi-c3Y" secondAttribute="bottom" id="Tw3-Il-oZA"/>
+                            <constraint firstItem="ZCm-TX-NDz" firstAttribute="centerX" secondItem="XXI-lN-PSt" secondAttribute="centerX" id="Vnl-XQ-rnZ"/>
+                            <constraint firstItem="VW9-5e-5P3" firstAttribute="trailing" secondItem="DLP-mi-c3Y" secondAttribute="trailing" id="XRt-HE-yLX"/>
+                            <constraint firstItem="DLP-mi-c3Y" firstAttribute="top" secondItem="VW9-5e-5P3" secondAttribute="top" id="ucv-1P-VAr"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="w9g-um-wXQ"/>
+                    <connections>
+                        <segue destination="B1i-pm-P7O" kind="show" identifier="16" id="Kda-Lh-XMk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V5l-3S-F5Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4741" y="1258"/>
+        </scene>
+        <!--Sixteenth View Controller-->
+        <scene sceneID="PVW-Ad-61z">
+            <objects>
+                <viewController id="B1i-pm-P7O" customClass="sixteenthViewController" customModule="Mantram_of_the_Will" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ou9-NN-Osf">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="16" translatesAutoresizingMaskIntoConstraints="NO" id="L1u-fu-WQP">
+                                <rect key="frame" x="0.0" y="44" width="428" height="828"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Course of Time is Marked by Ruins " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iFt-8A-2E2">
+                                <rect key="frame" x="63.333333333333343" y="841" width="301.33333333333326" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="czC-O8-Oi8"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="czC-O8-Oi8" firstAttribute="trailing" secondItem="L1u-fu-WQP" secondAttribute="trailing" id="1cT-B4-VNG"/>
+                            <constraint firstItem="czC-O8-Oi8" firstAttribute="bottom" secondItem="L1u-fu-WQP" secondAttribute="bottom" id="7HU-dY-Fzg"/>
+                            <constraint firstItem="L1u-fu-WQP" firstAttribute="top" secondItem="czC-O8-Oi8" secondAttribute="top" id="AXr-sZ-FRY"/>
+                            <constraint firstItem="czC-O8-Oi8" firstAttribute="bottom" secondItem="iFt-8A-2E2" secondAttribute="bottom" constant="10" id="JK0-bN-lpG"/>
+                            <constraint firstItem="L1u-fu-WQP" firstAttribute="leading" secondItem="czC-O8-Oi8" secondAttribute="leading" id="PV5-zs-Afi"/>
+                            <constraint firstItem="iFt-8A-2E2" firstAttribute="centerX" secondItem="ou9-NN-Osf" secondAttribute="centerX" id="Ysv-yY-LhE"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="KP5-gI-UOn"/>
+                    <connections>
+                        <segue destination="aKU-Bh-2Ew" kind="show" identifier="17" id="6u8-f5-diH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wpH-n6-lTp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1107" y="2054"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="sJc-W2-fXb">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="K1U-kh-9dD" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="U7U-Rw-jr5">
+                        <rect key="frame" x="0.0" y="44" width="428" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="V6Y-QV-Qwa" kind="relationship" relationship="rootViewController" id="kdf-KE-jtw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jgX-P3-bF4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1007.2463768115942" y="310.71428571428572"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="0" width="754" height="1278"/>
+        <image name="1" width="225" height="382"/>
+        <image name="10" width="250" height="424"/>
+        <image name="11" width="250" height="424"/>
+        <image name="12" width="350" height="593"/>
+        <image name="13" width="225" height="381"/>
+        <image name="14" width="300" height="508"/>
+        <image name="15" width="629" height="1070"/>
+        <image name="16" width="300" height="509"/>
+        <image name="17" width="300" height="508"/>
+        <image name="18" width="300" height="509"/>
+        <image name="19" width="164" height="277"/>
+        <image name="2" width="225" height="382"/>
+        <image name="20" width="300" height="509"/>
+        <image name="21" width="300" height="509"/>
+        <image name="22" width="754" height="1278"/>
+        <image name="3" width="225" height="381"/>
+        <image name="4" width="225" height="381"/>
+        <image name="5" width="225" height="382"/>
+        <image name="6" width="225" height="382"/>
+        <image name="7" width="225" height="381"/>
+        <image name="8" width="225" height="382"/>
+        <image name="9" width="225" height="381"/>
+        <image name="light" width="588" height="1000"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
